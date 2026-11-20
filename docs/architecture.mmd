@@ -1,0 +1,22 @@
+flowchart TD
+    U["User / Administrator"] --> FE["React + Vite Frontend"]
+    FE --> API["Flask REST API"]
+    API --> AUTH["Session Authentication"]
+    AUTH --> PEP["Policy Enforcement Point (PEP)"]
+    PEP --> PDP["Policy Decision Point (PDP)"]
+    PEP --> RISK["Risk Engine"]
+    RISK --> PDP
+    PDP --> DEC{"Authorization Decision"}
+
+    DEC -->|Allow| RES["Protected Resources: Dashboard / Reports"]
+    DEC -->|Step-up required| MFA["TOTP Multi-Factor Authentication"]
+    MFA --> PDP
+    DEC -->|Deny| DENY["Access Denied"]
+
+    API --> DB[("SQLite Database")]
+    DB --> USERS["Users and Roles"]
+    DB --> DEVICES["Device Registry and Trust"]
+    DB --> SECRETS["MFA Secrets"]
+    DB --> LOGS["Security Audit Events"]
+
+    ADMIN["Admin Approval Workflow"] --> DB

@@ -1,0 +1,46 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node and Vite
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Databases and local backups
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.log
+*.backup
+*.backup2
+*.lan-backup
+*.duplicate-backup
+**/backups/
+
+# Deployment and editor files
+.vercel/
+.idea/
+.DS_Store
+Thumbs.db
+# Local editor settings and backup files
+.vscode/
+*backup*
+.gitignore.before-github
+# Local backups and editor settings
+.vscode/
+*backup*
