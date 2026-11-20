@@ -13,8 +13,7 @@ import {
 import Dashboard from "./Dashboard";
 import "./App.css";
 
-const API = "http://10.123.55.174:5000";
-axios.defaults.withCredentials = true;
+const API = "";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
@@ -372,3 +371,4 @@ function App() {
 }
 
 export default App;
+
