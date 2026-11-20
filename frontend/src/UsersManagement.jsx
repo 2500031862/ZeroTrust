@@ -11,7 +11,7 @@ export default function UsersManagement({ onBack }) {
 
     try {
       const response = await fetch(
-        "http://10.123.55.174:5000/api/admin/users",
+        "/api/admin/users",
         {
           method: "GET",
           credentials: "include",

@@ -24,7 +24,7 @@ import {
 import Reports from "./Reports";
 import "./Dashboard.css";
 
-const API = "http://10.123.55.174:5000";
+const API = "";
 
 function Dashboard({ user, onLogout }) {
   const [risk, setRisk] = useState(null);

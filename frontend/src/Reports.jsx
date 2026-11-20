@@ -17,7 +17,7 @@ import {
 
 import "./Reports.css";
 
-const API = "http://10.123.55.174:5000";
+const API = "";
 
 function Reports({ onBack, user }) {
   const [reports, setReports] = useState([]);

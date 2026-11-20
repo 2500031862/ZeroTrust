@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import "./AdminDeviceApprovals.css";
 
-const API = "http://10.123.55.174:5000";
+const API = "";
 const isTrustedDevice = (device) =>
   device?.is_trusted === true || device?.is_trusted === 1 || device?.is_trusted === "1";
 
