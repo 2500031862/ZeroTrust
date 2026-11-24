@@ -13,7 +13,7 @@ import {
 import Dashboard from "./Dashboard";
 import "./App.css";
 
-const API = "";
+const API = "http://10.123.55.174:5000";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
